@@ -1,6 +1,10 @@
+import pandas as pd
+
+
 class Utils:
+
     # Function to get video details
-    def get_video_details(video_id):
+    def get_video_details(youtube, video_id):
         request = youtube.videos().list(
             part="snippet,contentDetails,statistics",
             id=video_id
@@ -36,7 +40,7 @@ class Utils:
         }
 
     # Function to get comments
-    def get_comments(video_id):
+    def get_comments(youtube, video_id):
         request = youtube.commentThreads().list(
             part="snippet",
             videoId=video_id,
@@ -55,7 +59,7 @@ class Utils:
     # Function to save results to a CSV file
     def save_results_to_csv(results, start_video_id, end_video_id):
         if results:
-            output_filename = f'/content/drive/MyDrive/Colab Notebooks/Data/youtube_video_data_{start_video_id}_to_{end_video_id}.csv'
+            output_filename = f'./files/output_files/youtube_video_data_{start_video_id}_to_{end_video_id}.csv'
             results_df = pd.DataFrame(results)
             results_df.to_csv(output_filename, index=False)
             print(f"Saved results to {output_filename}")

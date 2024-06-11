@@ -1,19 +1,21 @@
 import pandas as pd
 import googleapiclient.discovery
-import time
-import os
 from googleapiclient.discovery import build
 from Utils import Utils as utils
+from dotenv import load_dotenv
+import os
 
-API_KEY = ''
+# Load environment variables from .env file
+load_dotenv()
 
 # Create YouTube resource object
 youtube = build('youtube',
                 'v3',
-                developerKey=API_KEY)
+                developerKey=os.getenv("API_KEY"))
 
 # Load the CSV file with status
-csv_file_path = './files/youtube_video_links.csv'
+file_path = './files'
+csv_file_path = file_path + '/youtube_video_links.csv'
 df = pd.read_csv(csv_file_path)
 
 print("File Size ", df.size)
@@ -44,8 +46,12 @@ start_video_id = None
 comments = None
 
 # Process each video ID from the start index
-for idx in range(200, 202):
+for idx in range(start_index, len(df)):
     print(f"Processing video {idx}")
+    is_comment_disabled = False
+    # reset comment for each iteration
+    comments = ''
+
     row = df.iloc[idx]
     if row['status'] == 'Not Fetched':
         if start_video_id is None:
@@ -53,8 +59,8 @@ for idx in range(200, 202):
 
         video_id = row['youtubeId']
         try:
-            video_details = utils.get_video_details(video_id)
-            comments = utils.get_comments(video_id)
+            video_details = utils.get_video_details(youtube, video_id)
+            comments = utils.get_comments(youtube, video_id)
         except googleapiclient.errors.HttpError as e:
             # print(e)
             if e.resp.status == 404:
@@ -66,9 +72,9 @@ for idx in range(200, 202):
                 if "exceeded" in error_reason:
                     print(f"Quota exceeded. Stopping the execution.")
                     break  # Stop the execution if quota is exceeded
-                elif "commentsDisabled" in error_reason:
+                elif "commentsdisabled" in error_reason:
                     print(f"Error fetching data for video {video_id}: {error_reason}")
-                    df.at[idx, 'status'] = 'Fetched, Comment Disabled'
+                    is_comment_disabled = True
                     # continue
             elif e.resp.status in [500, 503]:
                 print(f"Temporary server error for video {video_id}")
@@ -80,10 +86,10 @@ for idx in range(200, 202):
         if video_details:
             video_details['comments'] = comments
             results.append(video_details)
-            df.at[idx, 'status'] = 'Fetched'
+            df.at[idx, 'status'] = 'Fetched, Comment Disabled' if is_comment_disabled else 'Fetched'
 
         # Periodically save results and update CSV
-        if len(results) >= 1000:  # Save every 1000 records
+        if len(results) >= 10:  # Save every 1000 records
             end_video_id = video_details['video_id']
             utils.save_results_to_csv(results, start_row_number, idx)
             results = []  # Clear results after saving
