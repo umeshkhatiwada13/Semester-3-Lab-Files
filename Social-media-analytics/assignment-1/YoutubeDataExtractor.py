@@ -73,7 +73,7 @@ for idx in range(start_index, len(df)):
                     print(f"Quota exceeded. Stopping the execution.")
                     break  # Stop the execution if quota is exceeded
                 elif "commentsdisabled" in error_reason:
-                    print(f"Error fetching data for video {video_id}: {error_reason}")
+                    print(f"Error fetching data for video {video_id}: commentsdisabled")
                     is_comment_disabled = True
                     # continue
             elif e.resp.status in [500, 503]:
@@ -89,7 +89,7 @@ for idx in range(start_index, len(df)):
             df.at[idx, 'status'] = 'Fetched, Comment Disabled' if is_comment_disabled else 'Fetched'
 
         # Periodically save results and update CSV
-        if len(results) >= 10:  # Save every 1000 records
+        if len(results) >= 5000:  # Save every 1000 records
             end_video_id = video_details['video_id']
             utils.save_results_to_csv(results, start_row_number, idx)
             results = []  # Clear results after saving
@@ -100,7 +100,7 @@ for idx in range(start_index, len(df)):
             df.at[0, 'd1'] = idx
             df.to_csv(csv_file_path, index=False)
 
-print("results ", results)
+# print("results ", results)
 # Save any remaining results
 if results:
     end_video_id = results[-1]['video_id']
