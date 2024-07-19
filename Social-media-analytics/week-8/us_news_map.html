@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b41681c21567d582be398560ad253fab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b41681c21567d582be398560ad253fab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b41681c21567d582be398560ad253fab = L.map(
+                "map_b41681c21567d582be398560ad253fab",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bfea06eb3b3f89eb4f66286147e709c6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bfea06eb3b3f89eb4f66286147e709c6.addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var marker_0ce9c9b134356bc566b9fab48f619f66 = L.marker(
+                [41.335656169511914, -74.09478664152144],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_5bf753b14cf0b2e940a238bab8b5f127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_0ce9c9b134356bc566b9fab48f619f66.setIcon(icon_5bf753b14cf0b2e940a238bab8b5f127);
+        
+    
+        var popup_87c65a65bda25c904fb95b7ac8077083 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ea6230e9c69f7337a504d26f84e6e8b = $(`<div id="html_1ea6230e9c69f7337a504d26f84e6e8b" style="width: 100.0%; height: 100.0%;"><b>Following SCOTUS ruling, what happens next in Trump's criminal hush money case?</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_87c65a65bda25c904fb95b7ac8077083.setContent(html_1ea6230e9c69f7337a504d26f84e6e8b);
+            
+        
+
+        marker_0ce9c9b134356bc566b9fab48f619f66.bindPopup(popup_87c65a65bda25c904fb95b7ac8077083)
+        ;
+
+        
+    
+    
+            var marker_1a38176a6b3f102c23058bb44a2c5b6d = L.marker(
+                [38.43225247296419, -77.48805950893248],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_956a882c70c681ebf05809e8197dc8f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_1a38176a6b3f102c23058bb44a2c5b6d.setIcon(icon_956a882c70c681ebf05809e8197dc8f6);
+        
+    
+        var popup_d98e010994b8a2bbfa54d5de2192c3e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cacadab15cb669bea9b934bf015130dd = $(`<div id="html_cacadab15cb669bea9b934bf015130dd" style="width: 100.0%; height: 100.0%;"><b>Biden meets with Democratic governors as dozens of House members seem ready to call for him to quit</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Negative</div>`)[0];
+                popup_d98e010994b8a2bbfa54d5de2192c3e5.setContent(html_cacadab15cb669bea9b934bf015130dd);
+            
+        
+
+        marker_1a38176a6b3f102c23058bb44a2c5b6d.bindPopup(popup_d98e010994b8a2bbfa54d5de2192c3e5)
+        ;
+
+        
+    
+    
+            var marker_3ba3f1456068354d8f19e00cf3296f91 = L.marker(
+                [40.85421610526406, -73.57252805784333],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_36ba85e9d156385d8d72e45c41ee9c1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_3ba3f1456068354d8f19e00cf3296f91.setIcon(icon_36ba85e9d156385d8d72e45c41ee9c1b);
+        
+    
+        var popup_b2459c4820df61ac0400d00a7e0be5cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f13eb9f8fd2ee52e98f0060d592f62d = $(`<div id="html_0f13eb9f8fd2ee52e98f0060d592f62d" style="width: 100.0%; height: 100.0%;"><b>Il y a un gros souci avec Elon Musk chez Tesla : cette étude le prouve</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_b2459c4820df61ac0400d00a7e0be5cd.setContent(html_0f13eb9f8fd2ee52e98f0060d592f62d);
+            
+        
+
+        marker_3ba3f1456068354d8f19e00cf3296f91.bindPopup(popup_b2459c4820df61ac0400d00a7e0be5cd)
+        ;
+
+        
+    
+    
+            var marker_fda4118b418dd82998489d831357eaf2 = L.marker(
+                [41.3622920397664, -74.43783277847085],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_3bd0363d6cf63fb507e65c7a4d55ec2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_fda4118b418dd82998489d831357eaf2.setIcon(icon_3bd0363d6cf63fb507e65c7a4d55ec2b);
+        
+    
+        var popup_53b8f7bafbc5165a2009e5dbff077e89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd143d9610aff37c928523e62419efe3 = $(`<div id="html_dd143d9610aff37c928523e62419efe3" style="width: 100.0%; height: 100.0%;"><b>Stormy Daniels Tells Rachel Maddow Of Harassment And Threats After Testifying In Trump Hush Money...</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Negative</div>`)[0];
+                popup_53b8f7bafbc5165a2009e5dbff077e89.setContent(html_dd143d9610aff37c928523e62419efe3);
+            
+        
+
+        marker_fda4118b418dd82998489d831357eaf2.bindPopup(popup_53b8f7bafbc5165a2009e5dbff077e89)
+        ;
+
+        
+    
+    
+            var marker_ec8ca38dca4ac7bd04f71dd760ee10f3 = L.marker(
+                [38.725026416194574, -76.55902109850456],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_29a68f5e74fdd6cee1579578399eff5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ec8ca38dca4ac7bd04f71dd760ee10f3.setIcon(icon_29a68f5e74fdd6cee1579578399eff5d);
+        
+    
+        var popup_84a9c5bdb2723f3a99bd4c705f037170 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8acc7cdb01f55c26c4cad4fc1c7ae19f = $(`<div id="html_8acc7cdb01f55c26c4cad4fc1c7ae19f" style="width: 100.0%; height: 100.0%;"><b>Les alliés de Donald Trump préparent le futur semi-autoritaire des États-Unis</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Neutral</div>`)[0];
+                popup_84a9c5bdb2723f3a99bd4c705f037170.setContent(html_8acc7cdb01f55c26c4cad4fc1c7ae19f);
+            
+        
+
+        marker_ec8ca38dca4ac7bd04f71dd760ee10f3.bindPopup(popup_84a9c5bdb2723f3a99bd4c705f037170)
+        ;
+
+        
+    
+    
+            var marker_4093c2fc674f0addfe8606f632035a17 = L.marker(
+                [40.3389112362231, -73.20753574380481],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_9dc2e0eedaf0b634dc294d8516890bf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_4093c2fc674f0addfe8606f632035a17.setIcon(icon_9dc2e0eedaf0b634dc294d8516890bf6);
+        
+    
+        var popup_fcc109b7db95b4aedc9c4b76d6a35438 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d0fd219855afa1f5148b744c607011b = $(`<div id="html_6d0fd219855afa1f5148b744c607011b" style="width: 100.0%; height: 100.0%;"><b>Nächste Tage entscheidend – Biden offenbar besorgt über seine Kandidatur</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_fcc109b7db95b4aedc9c4b76d6a35438.setContent(html_6d0fd219855afa1f5148b744c607011b);
+            
+        
+
+        marker_4093c2fc674f0addfe8606f632035a17.bindPopup(popup_fcc109b7db95b4aedc9c4b76d6a35438)
+        ;
+
+        
+    
+    
+            var marker_b97dc939e64bf3202fc6580b2212fa03 = L.marker(
+                [40.4198942738957, -73.75222777914152],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_c99ea74d371f2f52d76868dc2877e446 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_b97dc939e64bf3202fc6580b2212fa03.setIcon(icon_c99ea74d371f2f52d76868dc2877e446);
+        
+    
+        var popup_f5fef8068effd0229ffd64a7f6eb026c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb2cf56786141fd93d32efa2074101f0 = $(`<div id="html_eb2cf56786141fd93d32efa2074101f0" style="width: 100.0%; height: 100.0%;"><b>Präsidentschaftskandidatur: "New York Times" berichtet über angebliche Rückzugspläne von Joe Biden</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_f5fef8068effd0229ffd64a7f6eb026c.setContent(html_eb2cf56786141fd93d32efa2074101f0);
+            
+        
+
+        marker_b97dc939e64bf3202fc6580b2212fa03.bindPopup(popup_f5fef8068effd0229ffd64a7f6eb026c)
+        ;
+
+        
+    
+    
+            var marker_43c4b1aa3197b395777d431b32677eda = L.marker(
+                [40.73279610480122, -74.87880111754023],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_9fb45c9e6a5d49a698bf9b3fd9ba8059 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_43c4b1aa3197b395777d431b32677eda.setIcon(icon_9fb45c9e6a5d49a698bf9b3fd9ba8059);
+        
+    
+        var popup_73af1583ff44712d41f2da670d26070d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_664157a2010d88e6902f0e7454a524e6 = $(`<div id="html_664157a2010d88e6902f0e7454a524e6" style="width: 100.0%; height: 100.0%;"><b>US-Wahlkampf: Weißes Haus dementiert Bericht zu möglichem Rückzug Bidens</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_73af1583ff44712d41f2da670d26070d.setContent(html_664157a2010d88e6902f0e7454a524e6);
+            
+        
+
+        marker_43c4b1aa3197b395777d431b32677eda.bindPopup(popup_73af1583ff44712d41f2da670d26070d)
+        ;
+
+        
+    
+    
+            var marker_842552ec0485daa8586a8787a6da38d7 = L.marker(
+                [28.917435278159914, -97.87910145258844],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_dd91a94abd93eef434cdd475dc1fc9f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_842552ec0485daa8586a8787a6da38d7.setIcon(icon_dd91a94abd93eef434cdd475dc1fc9f7);
+        
+    
+        var popup_1c3a7167119e0d6a2a687920124738e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8f342877b329cf512a2cafcbcb400a1 = $(`<div id="html_c8f342877b329cf512a2cafcbcb400a1" style="width: 100.0%; height: 100.0%;"><b>Biden Pushes to Stop Heat Deaths after Decades of Delay</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Neutral</div>`)[0];
+                popup_1c3a7167119e0d6a2a687920124738e6.setContent(html_c8f342877b329cf512a2cafcbcb400a1);
+            
+        
+
+        marker_842552ec0485daa8586a8787a6da38d7.bindPopup(popup_1c3a7167119e0d6a2a687920124738e6)
+        ;
+
+        
+    
+    
+            var marker_edfed939af70059ec6c9c3a62e7363e8 = L.marker(
+                [40.58476994739468, -73.12337164862248],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_d10d10e53d9d0ca6458cd1fdaca685fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_edfed939af70059ec6c9c3a62e7363e8.setIcon(icon_d10d10e53d9d0ca6458cd1fdaca685fa);
+        
+    
+        var popup_2eaa64b5896ccf35ec6414b9d63f019c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfe672039ffa36c00348cd400ec31d8f = $(`<div id="html_bfe672039ffa36c00348cd400ec31d8f" style="width: 100.0%; height: 100.0%;"><b>Zweifelt Biden an seiner Kandidatur? Weißes Haus dementiert</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_2eaa64b5896ccf35ec6414b9d63f019c.setContent(html_bfe672039ffa36c00348cd400ec31d8f);
+            
+        
+
+        marker_edfed939af70059ec6c9c3a62e7363e8.bindPopup(popup_2eaa64b5896ccf35ec6414b9d63f019c)
+        ;
+
+        
+    
+    
+            var marker_b2add1dc12b06694ae2484f204e1c386 = L.marker(
+                [40.466195295678254, -74.0327159804349],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_06471db2e9d0bebc4fff2cf63845661f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_b2add1dc12b06694ae2484f204e1c386.setIcon(icon_06471db2e9d0bebc4fff2cf63845661f);
+        
+    
+        var popup_d360efaccb84a9de10d17548441cdb0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2437d48c9188d5ca5115e51d477e0024 = $(`<div id="html_2437d48c9188d5ca5115e51d477e0024" style="width: 100.0%; height: 100.0%;"><b>Selon le “New York Times”, Joe Biden “réfléchirait à rester ou non dans la course”</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_d360efaccb84a9de10d17548441cdb0d.setContent(html_2437d48c9188d5ca5115e51d477e0024);
+            
+        
+
+        marker_b2add1dc12b06694ae2484f204e1c386.bindPopup(popup_d360efaccb84a9de10d17548441cdb0d)
+        ;
+
+        
+    
+    
+            var marker_fd7b1b0249ede3f5c6fbe85f4612f3be = L.marker(
+                [40.82069342599565, -74.02384163528333],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_79f31080a5a36ed3ca891cecebce2ee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_fd7b1b0249ede3f5c6fbe85f4612f3be.setIcon(icon_79f31080a5a36ed3ca891cecebce2ee9);
+        
+    
+        var popup_af3af66fa023e6b3e1f56ae2b6cffd6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1194fa61922fd8bed3dac51792b8bece = $(`<div id="html_1194fa61922fd8bed3dac51792b8bece" style="width: 100.0%; height: 100.0%;"><b>What to Know About Project 2025, the Pro-Trump Plan to Overhaul US Government</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_af3af66fa023e6b3e1f56ae2b6cffd6b.setContent(html_1194fa61922fd8bed3dac51792b8bece);
+            
+        
+
+        marker_fd7b1b0249ede3f5c6fbe85f4612f3be.bindPopup(popup_af3af66fa023e6b3e1f56ae2b6cffd6b)
+        ;
+
+        
+    
+    
+            var marker_81f577e204a3acd65a45bda3531f8459 = L.marker(
+                [40.12943173986381, -73.70187040227404],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_e0fe190ddd9b1756bbc2cb531371a78d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_81f577e204a3acd65a45bda3531f8459.setIcon(icon_e0fe190ddd9b1756bbc2cb531371a78d);
+        
+    
+        var popup_0d15f8e8569d37d1d0eb3841db0ea4c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba585aee4339d91fba0ea7f4fff489f3 = $(`<div id="html_ba585aee4339d91fba0ea7f4fff489f3" style="width: 100.0%; height: 100.0%;"><b>Nyt: 'Biden valuta se continuare la corsa'. La Casa Bianca: 'Falso'</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_0d15f8e8569d37d1d0eb3841db0ea4c9.setContent(html_ba585aee4339d91fba0ea7f4fff489f3);
+            
+        
+
+        marker_81f577e204a3acd65a45bda3531f8459.bindPopup(popup_0d15f8e8569d37d1d0eb3841db0ea4c9)
+        ;
+
+        
+    
+    
+            var marker_8c00ecdf04a875870758931ac125f244 = L.marker(
+                [39.5627154848802, -77.29549856848206],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_5211a167648be27ad3c35903b2e3c50d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_8c00ecdf04a875870758931ac125f244.setIcon(icon_5211a167648be27ad3c35903b2e3c50d);
+        
+    
+        var popup_c471e61967ca41b4c228c911671b2476 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e75259f55c57348216197813cadbeef5 = $(`<div id="html_e75259f55c57348216197813cadbeef5" style="width: 100.0%; height: 100.0%;"><b>4 takeaways from the Supreme Court's most consequential term in years</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_c471e61967ca41b4c228c911671b2476.setContent(html_e75259f55c57348216197813cadbeef5);
+            
+        
+
+        marker_8c00ecdf04a875870758931ac125f244.bindPopup(popup_c471e61967ca41b4c228c911671b2476)
+        ;
+
+        
+    
+    
+            var marker_3c724b21b2b44c31e8c508216df31671 = L.marker(
+                [38.70438518744362, -77.48522242883239],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_cbe3fca25a343fc71c9149ec0c8fd95e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_3c724b21b2b44c31e8c508216df31671.setIcon(icon_cbe3fca25a343fc71c9149ec0c8fd95e);
+        
+    
+        var popup_499cc5108141f1b6f6d89117ae0b41bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_331ca47ce096a8c23a76f13961937eb1 = $(`<div id="html_331ca47ce096a8c23a76f13961937eb1" style="width: 100.0%; height: 100.0%;"><b>Dems’ Golden peddles misplaced optimism about Trump, democracy</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_499cc5108141f1b6f6d89117ae0b41bf.setContent(html_331ca47ce096a8c23a76f13961937eb1);
+            
+        
+
+        marker_3c724b21b2b44c31e8c508216df31671.bindPopup(popup_499cc5108141f1b6f6d89117ae0b41bf)
+        ;
+
+        
+    
+    
+            var marker_15855dec213d49d009558dd1b3111697 = L.marker(
+                [41.154020257741365, -74.09558563608654],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_8f5a5cee101deb4c8336991e52303f09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_15855dec213d49d009558dd1b3111697.setIcon(icon_8f5a5cee101deb4c8336991e52303f09);
+        
+    
+        var popup_ce8ad7ee5abf4c82e27ecd89cf4c041c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73283fd899dfcda41b62825ed2b3fce7 = $(`<div id="html_73283fd899dfcda41b62825ed2b3fce7" style="width: 100.0%; height: 100.0%;"><b>There's a reason why Black voters are more focused on Trump than Biden</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_ce8ad7ee5abf4c82e27ecd89cf4c041c.setContent(html_73283fd899dfcda41b62825ed2b3fce7);
+            
+        
+
+        marker_15855dec213d49d009558dd1b3111697.bindPopup(popup_ce8ad7ee5abf4c82e27ecd89cf4c041c)
+        ;
+
+        
+    
+    
+            var marker_ddff4418cb78d5de5310ad2a7d7dfabe = L.marker(
+                [40.827117932836096, -73.49087872891752],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_5451254e469b3a65ec6098538932bc6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_ddff4418cb78d5de5310ad2a7d7dfabe.setIcon(icon_5451254e469b3a65ec6098538932bc6b);
+        
+    
+        var popup_ff4751368560a9123b944125cad42827 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c05226de7862d25c5395e0ec886d3cdc = $(`<div id="html_c05226de7862d25c5395e0ec886d3cdc" style="width: 100.0%; height: 100.0%;"><b>Another Crushing Poll for Biden Shows Trump Pulling Ahead</b><br><i>Date: Wednesday, July 03, 2024</i><br>Sentiment: Negative</div>`)[0];
+                popup_ff4751368560a9123b944125cad42827.setContent(html_c05226de7862d25c5395e0ec886d3cdc);
+            
+        
+
+        marker_ddff4418cb78d5de5310ad2a7d7dfabe.bindPopup(popup_ff4751368560a9123b944125cad42827)
+        ;
+
+        
+    
+    
+            var marker_9cca54ffc38aa0209cb2f8f51b7f6d21 = L.marker(
+                [39.39037429589486, -77.80177780269244],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_728b6a9b6da2897a5d967b0a47baaffe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_9cca54ffc38aa0209cb2f8f51b7f6d21.setIcon(icon_728b6a9b6da2897a5d967b0a47baaffe);
+        
+    
+        var popup_ce688e4ff4540aa6da901f8026c0c27d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c20e38f287e3ff5689ab1a725fb1fb6e = $(`<div id="html_c20e38f287e3ff5689ab1a725fb1fb6e" style="width: 100.0%; height: 100.0%;"><b>Top Democrat Schiff calls on Biden to 'pass the torch'</b><br><i>Date: Wednesday, July 17, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_ce688e4ff4540aa6da901f8026c0c27d.setContent(html_c20e38f287e3ff5689ab1a725fb1fb6e);
+            
+        
+
+        marker_9cca54ffc38aa0209cb2f8f51b7f6d21.bindPopup(popup_ce688e4ff4540aa6da901f8026c0c27d)
+        ;
+
+        
+    
+    
+            var marker_9ea8b1512a47262dc91f18ba2b550945 = L.marker(
+                [38.44890552360825, -76.8909562981811],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_7b74968ec541e5afd946d91c03a434fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_9ea8b1512a47262dc91f18ba2b550945.setIcon(icon_7b74968ec541e5afd946d91c03a434fe);
+        
+    
+        var popup_a152adcf4046714df8470ae5cceeb732 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fda76b16d8520b17fe9960f6ca8eb94 = $(`<div id="html_0fda76b16d8520b17fe9960f6ca8eb94" style="width: 100.0%; height: 100.0%;"><b>Long Court Fight Ahead in Trump Classified Documents Case</b><br><i>Date: Wednesday, July 17, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_a152adcf4046714df8470ae5cceeb732.setContent(html_0fda76b16d8520b17fe9960f6ca8eb94);
+            
+        
+
+        marker_9ea8b1512a47262dc91f18ba2b550945.bindPopup(popup_a152adcf4046714df8470ae5cceeb732)
+        ;
+
+        
+    
+    
+            var marker_81714be356e49db223bdddbcbfb5e2b2 = L.marker(
+                [36.16556051120399, -115.31267922593837],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_9e5b1aab7f22f7b02d1659e255fa533a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_81714be356e49db223bdddbcbfb5e2b2.setIcon(icon_9e5b1aab7f22f7b02d1659e255fa533a);
+        
+    
+        var popup_3649de3831692ab7f8ebcde85a3aae72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a164c6d696b932c9a8cf71df78bfa9e1 = $(`<div id="html_a164c6d696b932c9a8cf71df78bfa9e1" style="width: 100.0%; height: 100.0%;"><b>Biden, in 1st major speech after Trump shooting, accuses him of 'lying like hell'</b><br><i>Date: Wednesday, July 17, 2024</i><br>Sentiment: Positive</div>`)[0];
+                popup_3649de3831692ab7f8ebcde85a3aae72.setContent(html_a164c6d696b932c9a8cf71df78bfa9e1);
+            
+        
+
+        marker_81714be356e49db223bdddbcbfb5e2b2.bindPopup(popup_3649de3831692ab7f8ebcde85a3aae72)
+        ;
+
+        
+    
+    
+            var marker_68ab7c4d345b6a024e3ec95bac5feb25 = L.marker(
+                [39.46988370136861, -75.87638312877374],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_61730d4237ff94e217dd6f74077f6c19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_68ab7c4d345b6a024e3ec95bac5feb25.setIcon(icon_61730d4237ff94e217dd6f74077f6c19);
+        
+    
+        var popup_3f577e1958484f4665c2267b49af174c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fae47ed7398f6e1ddc6979dd31029260 = $(`<div id="html_fae47ed7398f6e1ddc6979dd31029260" style="width: 100.0%; height: 100.0%;"><b>Wahlkampf in den USA: Trump, der Versöhner?</b><br><i>Date: Wednesday, July 17, 2024</i><br>Sentiment: Neutral</div>`)[0];
+                popup_3f577e1958484f4665c2267b49af174c.setContent(html_fae47ed7398f6e1ddc6979dd31029260);
+            
+        
+
+        marker_68ab7c4d345b6a024e3ec95bac5feb25.bindPopup(popup_3f577e1958484f4665c2267b49af174c)
+        ;
+
+        
+    
+    
+            var marker_55cb1ce3e64f5979073945c7776bfc2f = L.marker(
+                [39.69617016074663, -76.2371689260677],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_2401ced942ba0d69bbc7b6084ea18475 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_55cb1ce3e64f5979073945c7776bfc2f.setIcon(icon_2401ced942ba0d69bbc7b6084ea18475);
+        
+    
+        var popup_6620fce45b5733fe1b61b73466fbbb6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb240b798a7c9c2c201bb24dba85108e = $(`<div id="html_bb240b798a7c9c2c201bb24dba85108e" style="width: 100.0%; height: 100.0%;"><b>Prominent Democratic Rep. Adam Schiff Calls for Biden to Withdraw</b><br><i>Date: Wednesday, July 17, 2024</i><br>Sentiment: Neutral</div>`)[0];
+                popup_6620fce45b5733fe1b61b73466fbbb6e.setContent(html_bb240b798a7c9c2c201bb24dba85108e);
+            
+        
+
+        marker_55cb1ce3e64f5979073945c7776bfc2f.bindPopup(popup_6620fce45b5733fe1b61b73466fbbb6e)
+        ;
+
+        
+    
+    
+            var marker_d725bcd6c2a2f35522e79cba1c234349 = L.marker(
+                [38.3577623134263, -121.75648054111299],
+                {}
+            ).addTo(map_b41681c21567d582be398560ad253fab);
+        
+    
+            var icon_e924ee1a66a1a78729325cef4ed016a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d725bcd6c2a2f35522e79cba1c234349.setIcon(icon_e924ee1a66a1a78729325cef4ed016a0);
+        
+    
+        var popup_ef420728694542d694c4e73417c1ac4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f34441155bc0b46db096921e741a7178 = $(`<div id="html_f34441155bc0b46db096921e741a7178" style="width: 100.0%; height: 100.0%;"><b>The Republican National Convention That Shocked the Country</b><br><i>Date: Wednesday, July 17, 2024</i><br>Sentiment: Negative</div>`)[0];
+                popup_ef420728694542d694c4e73417c1ac4b.setContent(html_f34441155bc0b46db096921e741a7178);
+            
+        
+
+        marker_d725bcd6c2a2f35522e79cba1c234349.bindPopup(popup_ef420728694542d694c4e73417c1ac4b)
+        ;
+
+        
+    
+</script>
+</html>
